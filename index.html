@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça Palavras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <style>
+
+   body{    
+            color: #ffffff;
+        }
+    td{
+            border: 1px solid #ffffff;
+            text-align: center;
+            width: 70px;
+            height: 60px;
+        }
+    h1{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+       p{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+
+</head>
+<body background="imgs/wallpaper.jpg">
+    <center>
+
+        <h1 >Caça Palavras</h1>
+        <br>
+
+        <p>Teclado - Fone - Mouse - Monitor - Pendrive - Web-Cam - Modem - Memoria - Fonte - HD</p>
+        <br>
+        
+        <table>
+    <script>
+
+        matriz = new Array  
+        matriz = [["A", "R", "T", "E", "C", "L", "A", "D", "O", "J"], ["M", "I", "G", "D", "J", "P", "N", "O", "R", "B"], ["A", "O", "O", "I", "W", "E", "B", "C", "A", "M"], ["V", "E", "U", "C", "G", "N", "S", "R", "F", "O"], ["P", "I", "F", "E", "I", "D", "C", "L", "O", "U"], ["F", "K", "S", "J", "H", "D", "E", "G", "N", "S"], ["O", "F", "M", "O", "D", "E", "M", "S", "T", "E"], ["N", "E", "F", "E", "B", "Y", "A", "Q", "E", "P"], ["E", "A", "Y", "M", "E", "M", "O", "R", "I", "A"], ["M", "O", "N", "I", "T", "O", "R", "G", "K", "D"]]
+
+        decimal = new Array
+        decimal = [["0", "0", "1", "1", "1", "1", "1", "1", "1", "0"], ["1", "0", "0", "0", "0", "0", "0", "0", "0", "0"], ["0", "1", "0", "0", "1", "1", "1", "1", "1", "1"], ["0", "0", "1", "0", "0", "0", "0", "0", "1", "1"], ["0", "0", "0", "1", "0", "0", "0", "0", "1", "1"], ["1", "0", "0", "0", "1", "1", "0", "0", "1", "1"], ["1", "0", "1", "1", "1", "1", "1", "0", "1", "1"], ["1", "0", "0", "0", "0", "0", "0", "0", "1", "1"], ["1", "0", "0", "1", "1", "1", "1", "1", "1", "1"], ["1", "1", "1", "1", "1", "1", "1", "0", "0", "1"]]
+
+
+        for(linha=0;linha<10;linha++){
+            document.write("<tr>")
+            for(coluna=0;coluna<10;coluna++){
+                if(decimal[linha][coluna] == "1"){
+                    document.write("<td style='background-color:#FF6EC7;'>" + matriz[linha][coluna] + "</td>")
+                }
+                
+                else{
+                    document.write("<td>" + matriz[linha][coluna] + "</td>")
+                }
+            }
+            document.write("</tr>");
+        }
+
+
+    </script>
+        </table>
+
+    </center>
+</body>
+</html>
